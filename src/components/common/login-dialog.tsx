@@ -21,9 +21,15 @@ import { Dialog,
 } from "@/components/ui/alert-dialog"
  import { Input } from "@/components/ui/input";
  import { Label } from "@/components/ui/label";
+ import { Toggle } from "@/components/ui/toggle"
+import { BookmarkIcon, ItalicIcon } from "lucide-react"
 
 export default function LoginDialog() {
     return (
+    //      <Toggle aria-label="Toggle bookmark" size="sm" variant="outline" className="flex items-center">
+    //   <BookmarkIcon className="group-data-[state=on]/toggle:fill-foreground" />
+    //   Bookmark
+    // </Toggle>
          <AlertDialog>
       <AlertDialogTrigger asChild>
         <Button variant="outline">Show Dialog</Button>

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://ui.shadcn.com/schema.json",
   "style": "radix-nova",
   "rsc": true,
   "tsx": true,
@@ -9,7 +10,7 @@
     "cssVariables": true,
     "prefix": "tw-"
   },
-  "iconLibrary": "lucide",
+  "iconLibrary": "tabler",
   "rtl": false,
   "aliases": {
     "components": "@/components",
@@ -19,6 +20,6 @@
     "hooks": "@/hooks"
   },
   "menuColor": "default",
-  "menuAccent": "subtle",
+  "menuAccent": "bold",
   "registries": {}
 }
