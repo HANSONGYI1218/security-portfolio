@@ -1,10 +1,10 @@
 import { withErrorHandler } from "@/lib/errors/error-with-try-catch";
-import { login } from "@/services/auth.service";
+import { register } from "@/services/auth.service";
 
 export const POST = withErrorHandler(async (req: Request) => {
-  const { email, password } = await req.json();
+  const { name, email, password } = await req.json();
 
-  const user = await login(email, password);
+  const user = await register(name, email, password);
 
   return Response.json({ user });
 });

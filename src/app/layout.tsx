@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopBar from "@/components/common/top-bar";
- import { Toggle } from "@/components/ui/toggle"
-import { BookmarkIcon, ItalicIcon } from "lucide-react"
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,12 +27,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <Toggle aria-label="Toggle bookmark" size="sm" variant="outline" className="flex items-center">
-      <BookmarkIcon className="group-data-[state=on]/toggle:fill-black" />
-      Bookmark
-    </Toggle>
         <TopBar />
         {children}
+        <Toaster />
       </body>
     </html>
   );
